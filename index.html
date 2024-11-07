@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explore Pokhara</title>
+  <style>
+    /* General Styling */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: #f3f4f6;
+      color: #333;
+    }
+
+    /* Navbar */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1em 2em;
+      background-color: #4a90e2;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      margin: 0 1em;
+      font-weight: bold;
+    }
+
+    .navbar a:hover {
+      color: #ffdd57;
+    }
+
+    /* Hero Section */
+    .hero {
+      background: url('https://th.bing.com/th/id/OIP.MY8e9GJ8rUBjQvNoiwNe0wHaE8?w=264&h=180&c=7&r=0&o=5&pid=1.7') no-repeat center center/cover;
+      height: 60vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+      position: relative;
+    }
+
+    .hero h1 {
+      font-size: 3em;
+    }
+
+    .hero p {
+      font-size: 1.2em;
+      margin-top: 0.5em;
+    }
+
+    /* Section Styling */
+    section {
+      padding: 2em;
+    }
+
+    .section-title {
+      font-size: 2em;
+      margin-bottom: 0.5em;
+      color: #4a90e2;
+      text-align: center;
+    }
+
+    .content-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2em;
+    }
+
+    /* Card */
+    .card {
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .card h3 {
+      padding: 1em;
+      font-size: 1.5em;
+      color: #333;
+    }
+
+    .card p {
+      padding: 0 1em 1em;
+      font-size: 1em;
+      color: #666;
+    }
+
+    /* Footer */
+    footer {
+      padding: 1.5em;
+      background-color: #4a90e2;
+      color: white;
+      text-align: center;
+    }
+
+    footer a {
+      color: #ffdd57;
+      text-decoration: none;
+      margin: 0 0.5em;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <h2 style="color:white;">Explore Pokhara</h2>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#attractions">Attractions</a>
+      <a href="#adventure">Adventure</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div>
+      <h1>Discover Pokhara</h1>
+      <p>The Jewel of Nepal</p>
+    </div>
+  </section>
+
+  <!-- Attractions Section -->
+  <section id="attractions">
+    <h2 class="section-title">Top Attractions</h2>
+    <div class="content-grid">
+      <div class="card">
+        <img src="phewa.jpg" alt="Phewa Lake">
+        <h3>Phewa Lake</h3>
+        <p>Experience the serenity of Phewa Lake and enjoy boating with a view of the Annapurna range.</p>
+      </div>
+      <div class="card">
+        <img src="sarang.jpg" alt="Sarangkot">
+        <h3>Sarangkot</h3>
+        <p>Watch the sunrise over the Himalayas from the best viewpoint in Pokhara.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Adventure Section -->
+  <section id="adventure">
+    <h2 class="section-title">Adventure Activities</h2>
+    <div class="content-grid">
+      <div class="card">
+        <img src="para.jpg" alt="Paragliding">
+        <h3>Paragliding</h3>
+        <p>Fly high over Pokhara and take in the breathtaking views of the mountains and lakes.</p>
+      </div>
+      <div class="card">
+        <img src="boat.jpg".jpg" alt="Boating">
+        <h3>Boating</h3>
+        <p>Relax on the calm waters of Phewa Lake and enjoy the scenery.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Explore Pokhara. All rights reserved.</p>
+    <p>Follow us on <a href="#">Facebook</a> | <a href="#">Instagram</a> | <a href="#">Twitter</a></p>
+  </footer>
+
+</body>
+</html>
